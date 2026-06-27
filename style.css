@@ -1,10 +1,29 @@
 body{
     margin:0;
+    min-height: 100vh;
     font-family:Arial;
     background:url("vijywada.png");
     background-size:cover;
     background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color:white;
+}
+.login-box{
+    width: 90;
+    margin: 0 auto;
+}
+@media(max-width:600px){
+    .login-box{
+        width: 90;
+        margin: 0 auto;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
 }
 
 header{
