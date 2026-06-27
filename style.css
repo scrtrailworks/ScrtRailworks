@@ -7,6 +7,7 @@ body{
     background-position:center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow: hidden;
     color:white;
 }
 .login-box{
@@ -17,6 +18,10 @@ body{
     .login-box{
         width: 90;
         margin: 0 auto;
+        transform: translate(-60px);
+    }
+    h1{
+        margin-top: 20px;
     }
     .container{
         display: flex;
