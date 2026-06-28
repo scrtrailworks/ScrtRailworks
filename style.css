@@ -14,23 +14,34 @@ body{
     width: 85%;
     margin: 0 auto;
 }
-@media (max-width:60px) {
-    body{
-        min-height: 100vh;
+@media screen and (max-width:600px) {
+    html, body {
+        height: 100%;
         overflow: hidden;
     }
+    body{
+        margin: 0;
+    }
+
+    .main-container {
+        height: 100vh !important;
+        min-height: 100vh !important;
+    }
     .background {
-        height:100vh;
-        background-size: cover;
-        background-position: centre centre;
+        height:100vh !important;
+        min-height: 100vh !important;
+        background-size: cover !important;
+        background-position: center !important;
     }
     .login-box {
-        margin-top: -30px;
+        transform: translateY(-30px);
     }
-    .footer {
+    footer {
+        position: fixed;
         bottom: 5px;
-        font-size: 10px;
+        width: 100%;
     }
+    
 }
 
 header{
