@@ -1,46 +1,29 @@
 body{
-    margin:0;
+    margin: 0;
     min-height: 100vh;
-    font-family:Arial;
-    background:url("vijywada.png");
-    background-size:cover;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: url("vijywada.png") center
+    center / cover no-repeat;
     overflow: hidden;
-    color:white;
-}
-.login-box{
-    width: 85%;
-    margin: 0 auto;
+    
 }
 @media screen and (max-width:600px) {
-    html, body {
-        height: 100%;
-        overflow: hidden;
-    }
-    body{
-        margin: 0;
-    }
+   body{
+    height: 100dvh;
+    background-position: center top;
+   }
 
-    .main-container {
-        height: 100vh !important;
-        min-height: 100vh !important;
-    }
-    .background {
-        height:100vh !important;
-        min-height: 100vh !important;
-        background-size: cover !important;
-        background-position: center !important;
-    }
-    .login-box {
-        transform: translateY(-30px);
-    }
-    footer {
-        position: fixed;
-        bottom: 5px;
-        width: 100%;
-    }
+   .login-box{
+    width: 85%;
+    margin: 20px auto;
+    padding: 25px;
+   }
+   header h1{
+    font-size: 35px;
+   }
+   footer{
+    position: fixed;
+    bottom: 0;
+   }
     
 }
 
@@ -61,7 +44,7 @@ header h2{
 
 .login-box{
     width:400px;
-    margin:40px auto;
+    margin:20px auto;
     padding:40px;
 
     background:rgba(0,0,0,0.5);
